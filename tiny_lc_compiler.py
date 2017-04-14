@@ -18,11 +18,8 @@ def main():
         contents = f.read()
     sexp = loads(contents)
 
-    #parsed = "def println(s):\n\tprint(s)\n\treturn 0\n\n"
     parsed = parsed_header
     parsed += parse(sexp)
-
-    print(parsed)
     
     with open(args.dst_path, 'w') as f:
         f.write(parsed)
@@ -78,7 +75,6 @@ def parse_keywords(sexp):
             raise Exception("Expected 2 operand for '{}'".format(sexp[0].value()))
     else:
         return "({}({})) ".format(parse(sexp[0]), parse(sexp[1]))
-        #raise Exception("Invalid Keyword: '{}' in s-expression '{}'".format(sexp[0].value(), sexp))
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Compiles lambda calculus into python')
