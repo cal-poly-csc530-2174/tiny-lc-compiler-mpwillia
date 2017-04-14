@@ -25,10 +25,10 @@ sys.setrecursionlimit(10**6)
 
 This dramatically increases the recursion limit to 1000000 rather than 1000.
 
-Is this excessive? Yes
+*Is this excessive?* Yes
 
-Does it solve the problem? Yup
+*Does it solve the problem?* Yup
 
-Can you now overflow the stack? You bet
+*Can you now overflow the stack?* You bet
 
 
