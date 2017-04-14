@@ -32,7 +32,9 @@ This dramatically increases the recursion limit to 1000000 rather than 1000.
 *Can you now overflow the stack?*  You bet
 
 ## Libraries
-We used [sexpdata](https://pypi.python.org/pypi/sexpdata) to parse the expression trees, our compiler than walks them, translating to appropriate python code along the way.
+We used [sexpdata](https://pypi.python.org/pypi/sexpdata) to parse the lambda calculus expressions into a symbolic tree. 
+
+Our compiler than walks them, translating to appropriate python code along the way.
 
 
 
