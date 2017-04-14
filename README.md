@@ -20,7 +20,7 @@ Will read `input.txt` and compile it to the file `output.py`
 Python has a default recursion limit of 1000 which is rather small for the recursive nature of lambda calculus. To alleviate this problem we inject the following code into every compiled program.
 ```python
 import sys
-sys.setrecursionlimit(1e6)
+sys.setrecursionlimit(10**6)
 ```
 
 This dramatically increases the recursion limit to 1000000 rather than 1000.
