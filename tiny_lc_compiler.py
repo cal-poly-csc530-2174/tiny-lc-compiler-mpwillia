@@ -6,7 +6,7 @@ lambda_strs = {"λ", "λ", "lambda", "lamda"}
 keywords = lambda_strs | {"+", "*", "ifleq0", "println" }
 
 parsed_header = ("import sys\n"
-                 "sys.setrecursionlimit(100000)\n\n"
+                 "sys.setrecursionlimit(1e6)\n\n"
                  "def println(s):\n"
                  "\tprint(s)\n"
                  "\treturn 0\n\n")
