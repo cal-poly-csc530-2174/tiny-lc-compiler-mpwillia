@@ -1,1 +1,3 @@
-# tiny-lc-compiler-mpwillia
+# Tiny Lambda Calculus Compiler
+Michael Williams
+Alanna Buss
